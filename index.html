@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <head lang="pt-br">
+        <link rel="stylesheet" href="style.css">
+        <title>Botao Colorido</title>
+
+    </head>
+       <script>
+        function verde() {
+            document.querySelector('#nome').classList.remove('azul');
+            document.querySelector('#nome').classList.remove('vermelho');
+            document.querySelector('#nome').classList.add('verde');
+            document.querySelector('#butverd').classList.add('verde');
+            document.querySelector('#butvermelho').classList.remove('vermelho');
+            document.querySelector('#butazul').classList.remove('azul');
+
+        } 
+        function vermelho(){
+            document.querySelector('#nome').classList.remove('azul');
+            document.querySelector('#nome').classList.remove('verde');
+            document.querySelector('#nome').classList.add('vermelho');
+            document.querySelector('#butvermelho').classList.add('vermelho');
+            document.querySelector('#butazul').classList.remove('azul');
+            document.querySelector('#butverd').classList.remove('verde');
+
+        }
+
+        function azul(){
+            document.querySelector('#nome').classList.remove('verde');
+            document.querySelector('#nome').classList.remove('vermelho');
+            document.querySelector('#nome').classList.add('azul');
+            document.querySelector('#butazul').classList.add('azul');
+            document.querySelector('#butverd').classList.remove('verde');
+            document.querySelector('#butvermelho').classList.remove('vermelho');
+
+
+        }
+
+    </script>
+    
+    <body>
+
+        <h1 id="nome">Emerson</h1>
+
+        <button  id="butverd" onclick="verde()">verde</button>
+        <button id="butvermelho" onclick="vermelho()">Vermelho</button>
+        <button id="butazul" onclick="azul()" >Azul</button>
+
+    </body>
+</html>
